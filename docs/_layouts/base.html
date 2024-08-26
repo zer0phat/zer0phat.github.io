@@ -5,7 +5,7 @@
 
 <body>
   <!-- default script -->
-  <script type="javascript">
+  <script>
     const theme = localStorage.getItem('theme');
     if (theme === "dark") {
       document.documentElement.setAttribute('data-theme', 'dark');
@@ -23,7 +23,7 @@
   {%- include footer.html -%}
   
   <!-- default script -->
-  <script type="javascript">
+  <script>
     const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');	
     
     if (theme === "dark") {
