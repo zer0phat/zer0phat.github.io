@@ -17,8 +17,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "dark"
+# remote_theme: "mmistakes/minimal-mistakes"
+# minimal_mistakes_skin: "dark"
 
 title: Zer0Phat
 email: zer0phat@protonmail.ch
