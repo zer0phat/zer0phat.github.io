@@ -31,8 +31,6 @@ github_username:  zer0phat
 
 # Build settings
 theme: minima
-minima:
-  skin: solarized-dark
 
 plugins:
   - jekyll-paginate
@@ -41,6 +39,9 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+
+minima:
+  skin: dark
 
 # Exclude from processing.
 # The following items will not be processed, by default.
