@@ -31,6 +31,9 @@ github_username:  zer0phat
 
 # Build settings
 theme: minima
+minima:
+  skin: solarized-dark
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
