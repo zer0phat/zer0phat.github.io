@@ -37,7 +37,9 @@ layout: base
         {%- endif -%}
         
         {%- if site.show_excerpts -%}
-          {{ post.content | strip_html | truncatewords:75 }}
+          <a href="{{ post.url | relative_url }}">
+            {{ post.content | strip_html | truncatewords:75 }}
+          </a>
         {%- endif -%}
       </li>
       {%- endfor -%}
