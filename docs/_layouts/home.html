@@ -27,15 +27,10 @@ layout: base
       <li>
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
+          <a class="post-link" alt="read more" href="{{ post.url | relative_url }}" style="text-decoration:none">
             {{ post.title | escape }}
           </a>
         </h3>
-        {%- if post.image_preview -%}
-          <img width="100%" src="/assets/images/previews/{{ post.image_preview }}" />
-          <br/>
-        {%- endif -%}
-        
         {%- if site.show_excerpts -%}
           <a href="{{ post.url | relative_url }}">
             {{ post.content | strip_html | truncatewords:75 }}
