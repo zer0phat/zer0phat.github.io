@@ -32,8 +32,10 @@ layout: base
           </a>
         </h3>
         {%- if post.image_preview -%}
-          <img width="100%" src="/assets/images/previews{{ post.image_preview }}" />
+          <img width="100%" src="/assets/images/previews/{{ post.image_preview }}" />
+          <br/>
         {%- endif -%}
+        
         {%- if site.show_excerpts -%}
           {{ post.content | strip_html | truncatewords:75 }}
         {%- endif -%}
