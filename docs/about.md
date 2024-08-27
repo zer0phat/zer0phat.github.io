@@ -14,5 +14,5 @@ This will be the place where to share my ideas, projects and failures.
 </p>
 
 <p align=center>
-    <img src="./assets/images/pizza_manifesto.jpeg" height="400px">
+    <img src="/assets/images/pizza_manifesto.jpeg" height="500px">
 </p>
