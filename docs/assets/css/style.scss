@@ -1,19 +1,29 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
 
-.centered {
-  text-align: center;
+@media screen and (max-width: 702px) {
+  .right {
+    text-align: center;
+  }
+
+  .centered {
+    text-align: center;
+  }
+  
+}
+
+@media screen and (min-width: 703px) {
+  .right {
+    text-align: right;
+  }
+
+  .centered {
+    text-align: left;
+  }
+  
 }
 
 .left {
   text-align: left;
-}
-
-.right {
-  text-align: right;
 }
