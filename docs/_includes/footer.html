@@ -21,12 +21,17 @@
             <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
           {%- endif %}
         </ul>
+        <ul class="contact-list">
+          <a href="{{ site.social_links.github | cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg></a>
+          &emsp;
+          <a href="{{ site.social_links.linkedin| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg></a>
+          &emsp;
+          <a href="{{ site.social_links.x | cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#x' | relative_url }}"></use></svg></a>
+        </ul>
       {%- endif %}
       </div>
-      <div class="footer-col centered" >
-        <img width="80vw" title="zer0phat" src="/assets/images/logo_preview.png" />
-        <p>-</p>
-        <p>{{ site.description | escape }}</p>
+      <div class="footer-col right" >
+        <img width="90vw" title="zer0phat" src="/assets/images/logo_preview.png" />
       </div>
     </div>
 
