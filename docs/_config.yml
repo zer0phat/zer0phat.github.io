@@ -31,7 +31,6 @@ header_pages:
 
 # Set to `true` to show excerpts on the homepage.
 show_excerpts: true
-excerpt_separator: <!--more-->
 
 # Minima specific settings, which are only available from Minima 3.0 onward.
 minima:
