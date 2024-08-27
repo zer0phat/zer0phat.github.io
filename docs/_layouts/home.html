@@ -32,7 +32,7 @@ layout: base
           </a>
         </h3>
         {%- if site.show_excerpts -%}
-          <span>{{ post.excerpt }}<a href="{{ post.url | relative_url }}"><b>(read more ...)</b></a></span>
+          <span>{{ post.content | strip_html | truncatewords:75 }}<a href="{{ post.url | relative_url }}">(read more ...)</a></span>
         {%- endif -%}
       </li>
       {%- endfor -%}
