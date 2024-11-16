@@ -78,7 +78,7 @@ Maybe all these arrays are required for our end goal, maybe not, but first, <i>w
 
 ## Exported Functions In Memory
 
-<p align=center><a href="/postimgs/defa6a17-b24b-42a3-8aa3-5726978207a3.png"><img src="/postimgs/defa6a17-b24b-42a3-8aa3-5726978207a3.png" /><a></p>
+<p align=center><a href="/postimgs/defa6a17-b24b-42a3-8aa3-5726978207a3.png"><img src="/postimgs/defa6a17-b24b-42a3-8aa3-5726978207a3.png" /></a></p>
 
 You can see the list of the modules (DLLs) loaded by a Notepad.exe process from the image above. Let's select a random DLL from the list, in this case I chose ```uiautomationcode.dll``` loaded at ```0x7FF897060000```. The next dll, ```umpdc.dll``` is loaded at ```0x7FF8C6140000```: keep this in mind.
 The first exported function, ```UiaReturnRawElementProvider```, can be found at ```0x7ff8970B16D0```. The last exported one at ```0x7ff89717FA50```. In between those two memory addresses there are all the other exported functions.
