@@ -6,7 +6,7 @@ author:
 - zer0Phat
 ---
 
-<img align="right" width="350" style="margin-left: 20px" src="/postimgs/df25746e-c321-4b0b-8937-cc69bd65d990.png">
+<a href="/postimgs/df25746e-c321-4b0b-8937-cc69bd65d990.png"><img align="right" width="350" style="margin-left: 20px" src="/postimgs/df25746e-c321-4b0b-8937-cc69bd65d990.png"></a>
 
 When I write my injectors, one of the details I'm interested in is the manipulation of the target process memory. I have already had fun looking for existing buffer in memory that allow me to store my shellcodes without dealing with the allocation of new ones.
 I discussed in this [blog]([https://url.of.the.blog/](https://www.covertswarm.com/post/exploiting-microsoft-windows-11-via-process-no-hollowing)) how I used the PE EntryPoint of a Windows process (and the memory pointed by this) to store and execute payloads.
@@ -67,7 +67,7 @@ typedef struct _IMAGE_EXPORT_DIRECTORY {
 ```
 The last three entries are the juicy parts we are looking for. ```AddressOfFunctions``` for example, returns the RVA (DOWRD) of the first exported function, but it can also be treated as a pointer to retrieve the array of all the exported functions RVA. The same can be applied to ```AddressOfNames``` and ```AddressOfNameOrdinals```.
 
-<p align=center><img src="/postimgs/0b3dd5ba-1a79-4479-b573-6cd423c75cd7.png" /></p>
+<p align=center><a href="/postimgs/0b3dd5ba-1a79-4479-b573-6cd423c75cd7.png"><img src="/postimgs/0b3dd5ba-1a79-4479-b573-6cd423c75cd7.png" /></a></p>
 
 These three arrays can provide me with the lists of exported functions:
 - ```RVAs```
@@ -78,7 +78,7 @@ Maybe all these arrays are required for our end goal, maybe not, but first, <i>w
 
 ## Exported Functions In Memory
 
-<p align=center><img src="/postimgs/defa6a17-b24b-42a3-8aa3-5726978207a3.png" /></p>
+<p align=center><a href="/postimgs/defa6a17-b24b-42a3-8aa3-5726978207a3.png"><img src="/postimgs/defa6a17-b24b-42a3-8aa3-5726978207a3.png" /><a></p>
 
 You can see the list of the modules (DLLs) loaded by a Notepad.exe process from the image above. Let's select a random DLL from the list, in this case I chose ```uiautomationcode.dll``` loaded at ```0x7FF897060000```. The next dll, ```umpdc.dll``` is loaded at ```0x7FF8C6140000```: keep this in mind.
 The first exported function, ```UiaReturnRawElementProvider```, can be found at ```0x7ff8970B16D0```. The last exported one at ```0x7ff89717FA50```. In between those two memory addresses there are all the other exported functions.
