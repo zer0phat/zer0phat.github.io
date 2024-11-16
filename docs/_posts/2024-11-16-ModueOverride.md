@@ -6,7 +6,7 @@ author:
 - zer0Phat
 ---
 
-<img align="right" width="350" src="/postimgs/df25746e-c321-4b0b-8937-cc69bd65d990.png">
+<img align="right" width="350" style="margin-left: 20px" src="/postimgs/df25746e-c321-4b0b-8937-cc69bd65d990.png">
 
 When I write my injectors, one of the details I'm interested in is the manipulation of the target process memory. I have already had fun looking for existing buffer in memory that allow me to store my shellcodes without dealing with the allocation of new ones.
 I discussed in this [blog]([https://url.of.the.blog/](https://www.covertswarm.com/post/exploiting-microsoft-windows-11-via-process-no-hollowing)) how I used the PE EntryPoint of a Windows process (and the memory pointed by this) to store and execute payloads.
