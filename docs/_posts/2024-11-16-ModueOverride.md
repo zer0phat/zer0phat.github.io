@@ -6,6 +6,11 @@ author:
 - zer0Phat
 ---
 
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@zer0phat" />
+<meta name="twitter:title" content="ModuleOverride" />
+<meta name="twitter:image" content="https://zer0phat.github.io/postimgs/df25746e-c321-4b0b-8937-cc69bd65d990.png" />
+
 <a href="/postimgs/df25746e-c321-4b0b-8937-cc69bd65d990.png"><img align="right" width="350" style="margin-left: 20px" src="/postimgs/df25746e-c321-4b0b-8937-cc69bd65d990.png"></a>
 
 When I write my injectors, one of the details I'm interested in is the manipulation of the target process memory. I have already had fun looking for existing buffer in memory that allow me to store my shellcodes without dealing with the allocation of new ones.
