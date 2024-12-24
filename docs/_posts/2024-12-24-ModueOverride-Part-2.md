@@ -222,7 +222,7 @@ In this quick PoC video I'm using Cheat Engine to inject my DLL in a ```notepad.
 
 ## What to Improve
 As you can see from the proof-of-concept, the target process (```notepad.exe```) dies after the DLL injection (and shellcode execution). Having more control on what happens over the entire process is the next goal for this project.
-Reducing the amount of C++, in favor of assembly is another cool change which can make ModuleOverride more streamlined. Having said that, I am satisfied with the result obtained and I hope you enjoyed it too. In the next paragraph, you can see the source of the functions executed by the DLL when loaded within the target process. The complete source code che be found in <a href="https://github.com/zer0phat/ModuleOverride">my repository</a>. <i>Let's go checking how different the source is compared with the what 5hid - partially - reversed.</i>
+Reducing the amount of C++, in favor of assembly is another cool change which can make ModuleOverride more streamlined. Having said that, I am satisfied with the result obtained and I hope you enjoyed it too. In the next paragraph, you can see the source of the functions executed by the DLL when loaded within the target process. The complete source code che be found in <u>[my repository](https://github.com/zer0phat/ModuleOverride)</u>. <i>Let's go checking how different the source is compared with the what 5hid - partially - reversed.</i>
 
 ## Source
 ``` cpp
